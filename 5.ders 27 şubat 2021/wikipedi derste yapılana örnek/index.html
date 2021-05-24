@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikipedi</title>
+    <style>
+        body{
+            margin: 0;
+            background-image: url("73332a8380091a72b209c32c0af73834.jpg");
+            background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+        }
+        h1,h2,h3{
+            margin: 0;
+        }
+        p{
+            font-size: 18px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+        .content{
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .satir1{
+            width: 100%;
+        }
+        .satir2 > .akordiyon{
+            width: 70%;
+            float: left;
+           
+
+            
+        }
+        .satir2 > .tablo{
+            width: 30%;
+            float: left;
+            background-color: #aa008e;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+
+        }
+        th{
+            text-align: left;
+        }
+        /*730px ve daha küçük*/
+        @media all and (max-width:900px){
+            .satir2 > .akordiyon, .satir2 > .tablo{
+                width: 100%;
+            }
+            .content{
+                width: 95%;
+            }
+
+        }
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+        background-color:#aa008e;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordion:hover {
+        background-color: #ccc;
+        }
+
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+        padding: 0 18px;
+        background-color: #aa008e;
+        display: none;
+        overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">  
+        <h1>Osman Gazi</h1>
+        <hr>
+        <p style="color: grey;">Vikipedi, özgür ansiklopedi</p>
+        
+
+        <div class="satir1">
+            <p>
+                I. Osman veya Osman Gazi (Osmanlı Türkçesi: عثمان بك Osman Bek), mahlasıyla Fahrüddin veya Osmancık 
+                (1258, Söğüt - 1324, Bursa), Osmanlı Beyliği ve Osmanlı Hanedanı'nın kurucusu ve beyliğin ilk padişahı
+                 olan Türk hükümdar. Dedesinin Süleyman Şah veya Gündüz Alp isimli Kayı Beyi olduğu bilinmektedir.[2][3][4][7] 
+                 Büyükannesi Hayme Hatun (Süleyman Şah'ın eşi), babası Ertuğrul Gazi[7] ve annesi Halime Hatun'dır. Âşıkpaşazâde'nin
+                  14. Bâb'ına göre Osman Gazi bir taraftan kendisinin "Gök Âlp" neslinden olduğunu ileri sürerken, diğer taraftan da kendi
+                   dedesinin isminin Kaya Alpoğlu Süleyman Şah değil, Kutalmışoğlu Süleyman Şah olduğunu söylediği iddia 
+                   edilmektedir.[8][9]
+            </p>
+
+        </div>  <!--satir1 kapanış-->
+        
+        <div class="satir2">
+            <!--Satır 2 sütun 1-->
+                <div class="akordiyon">
+                 <button class="accordion">Beyliğin bağımsızlık ilanı</button>
+                <div class="panel">
+                <p>1299 yılında uç beyi olmaktan çıkıp Söğüt ve Domaniç'te Osmanlı Beyliği'ni kurmuştur. Sonrasında bağımsızlığını
+                     ilan etmiştir. Tarihçi Halil İnalcık'a göre Osmanlı Devleti bağımsızlığını 1302'de Koyunhisar Muharebesi'nden sonra
+                      kazanmıştır. Moğol istilalarından kaçan bazı Türkmen topluluklarının beyliğine sığınması ile siyasi ve askerî gücü 
+                      artmıştır. Çöküş döneminde bulunan Doğu Roma İmparatorluğu'ndaki karışıklıkların da etkisiyle kısa sürede Anadolu 
+                      ve Doğu Roma'nın hâkimi durumuna gelmiştir. Öldüğü zaman beylik, Eskişehir ile Bursa arasındaki topraklarda hüküm 
+                      sürüyor ve Doğu Roma İmparatorluğu'na ait İznik ve Bursa'yı abluka altında tutuyordu.[10]</p>
+                </div>
+
+                <button class="accordion">İlk yılları</button>
+                <div class="panel">
+                <p>Osman Bey, 1258 yılında Söğüt'te doğdu.[11]
+
+                    Yaşamının erken dönemleri hakkında güvenilir kayıtlar yoktur. Osman Bey'in soyuna 
+                    ve boyuna ait bilgiler gelenekseldir ve en eskisi ölümünden 100 yıl sonra yazılmıştır. Bu eserler arasında en 
+                    eskiden başlayarak Ahmedî (ö. 1414), Dâstân ve Tevarih-i Mûlûk-i Âl-i Osman', Şükrullah (ö. 1464), Behçetu't-Tevarih 
+                    ve Âşıkpaşazâde (ö. 1481), Tevarih-i Âl-i Osman adlı eserler isimlendirilebilir. Dönemine ait tüm çağdaş eserler büyük
+                     ölçüde 1422 ya da hemen sonrasında tarihlendirilen ve artık mevcut olmayan ama özgün bir metinden türemiş oldukları 
+                     iddia edilmektedir.[12] Bazı tarihçilere göre,[11]
+                    
+                    Osman Gazi'nin yaşam ve savaşları tarihsellikten çok, masalsı destansı bir örtüntü içinde, halk söylentileri,
+                     ermişlik öyküleri ve mitolojik lejantlarla renklendirilmiştir.</p>
+
+                     <p>Babası Ertuğrul Gazi Batı Anadolu’da Söğüt Ovası ile Domaniç Yaylasında yaşayan Oğuz Türkleri'nin
+                          Bozok boyunun Kayı kolundan olan büyük kalabalık bir obaya başkanlık etmekteydi. Osman Gazi onun küçük oğlu 
+                          idi. Tarihçi İbn-i Kemal (ö. 1534) Tevarih-i Al-i Osman adlı eserinde Ertuğrul Bey'in Anadolu'ya (Rum'a)
+                           geldiğinde iki oğlu bulunduğunu, Söğüt'te göçebe yaşamının sürdürürken 1258'de (hicri 658'de) "aslan yapılı
+                            ay yüzlü" küçük oğlu Osman'ın doğduğunu bildirir.[13] Halk söylentilerine göre babaannesi, Hayma Ana'dır.[14]
+                     </p>
+
+                       <p>Yine tarihçi İbn-i Kemal, Osman'ın gençliğinde "yiğitler arasına girdiğini" ve "vurmada tutmada ve durmada ve
+                            oturmada herkesi kendine uydurduğunu" belirtir ve kardeşlerden (Gündüz Bey ve Saru Batu Savcı Bey) en
+                             küçüğü olmakla beraber "şimşir (kılıç) ve tedbirle cümlesinden evvel olduğunu" bildirir.[13] Bu anlatımın
+                              Oğuz destanının temalarına benzer şekilde işlenmiş olduğu barizdir.</p>
+                        
+                       <p>1281 yılında 23 yaşındayken Ömer Abdulaziz Bey'in kızı Malhun Hatun ile evlendi. Bu evlilikten daha sonra
+                            Osmanlı Devleti'nin başına geçecek olan Orhan Gazi doğdu.</p>
+                </div>
+
+                <button class="accordion">Beyliği eline geçirme çabaları</button>
+                <div class="panel">
+                <p>1281 yılında babası Ertuğrul Bey 90 yaşlarındayken ölmüştür.
+
+                    Birçok tarihçinin anlaştığı görüşe göre, Kayı aşireti beyliği için beylik görevi değişmesi
+                     barışçıl olmamış ve beylik görevini üzerine alabilmek için Osman Gazi yakınları ile taht mücadelesi yapmıştır.
+                      Bu mücadelenin kimle yapıldığı ve nasıl geliştiği tartışmalı olup değişik tarihçiler değişik anlatımlarda 
+                      bulunmaktadırlar.</p>
+                    
+                    <p>Bu anlatımlardan çokça sayıda taraflısı olan birisine göre, Osman Gazi amcası Dündar Gazi ile beylik için 
+                        çatışmaya girişmiştir. Bu anlatıma göre Dündar Bey Kayı boyunun ileri gelen ulusları tarafından tutulmakta ve 
+                        aşiretin genç yiğitleri ise Osman Bey'i desteklemekteydi. Bu çatışmanın ne kadar sürdüğü ne türlü devam ettiği 
+                        bilinmemektedir, fakat çatışma sonunda Osman Bey galip gelmiş ve düşmana karşı yapılan akınlara karşı çıktığı
+                         bahanesi verilerek yaşlı Dündar Bey'i bir ok atımı ile öldürmüştür. Bundan sonra Osman Bey Oğuz töresine uygun
+                          olarak Kayı aşiretine baş ve bey olmuştur.[11]</p>
+                    
+                   <p> Alternatif bir anlatım olan Hacı Bektaş'ın "Velâyet-Nâme" eserinde ise Osman'ın beyliğe geçme anlatımı değişiktir.
+                       [15] Kayı boyu aşireti Sultanönü ve civarına yerleştikten sonra önce amcası Aydoğmuş ve sonra babası Erdoğdu 
+                       (Ertuğrul) Bey beyliklerinden daha sonra da abisi Gündüz Alp Kayı beyi olmuştur. Osman Gazi bu sırada çevresindeki
+                        aşiret yiğitleri ile yerel Bizanslı Yarhisar, Bilecik, İnegöl, İznik yörelerine akınlar düzenlemeye başlamıştır.
+                         Bizanslı Bursa Tekfuru Konya'da bulunan Selçuklu sultanı III. Alaeddin Keykubad'a elçiler gönderip bu akınlardan
+                          şikâyet etmiştir. Selçuklu Sultanı ise Gündüz Alp'a haber göndererek akınları düzenleyen küçük kardeşi Osman 
+                          Bey'i yola getirmesini istemiştir. Gündüz Alp Osman Beyi yakalayarak yiğitleri ile birlikte Konya'ya III. Alaeddin 
+                          Keykubad'a göndermiştir.</p>
+                    
+                   <p>Ancak Selçuklu Sultanı Osman Gazi'yi beğenip el ve onay alması için onu Sultan Karahöyük'te bulunan Hacı Bektaş
+                        Veli'ye yollamıştır. Hacı Bektaş, Osman'ı büyük bir misafirperverlikle karşılamış, ve tekbirle kendi tülbentini
+                         onun başına dolayıp sanki ona taç giydirmiştir. Osman Konya'ya dönerken Hacı Bektaş onunla Sultan'a hitap eden 
+                         Osman'ı öven bir mektup da göndermiştir. Selçuklu Sultanı bu mektubu okuduktan sonra "buna yüce bir mansıp 
+                         veresuz" dediği bildirilir. Osman Gazi Sultanönü ucunun merkezi olan Söğüt'e döndükten sonra Selçuklu Sultanı
+                          ayrıca "altun başlı sancak" ve "tablhane (mehter)" gönderip onu ödüllendirmiştir. Bu öykü Vilayetname yanında
+                           Yazıcizade'nin Selçukname adlı eserinde de tekrar edilmektedir.[16] Birçok tarihçi bu ödüllendirmeyi uç
+                            beyliğine istiklâl verilmesi olarak kabul etmektedir.[11] Hacı Bektaş Vilayetname eseri Gündüz Alp ile Osman 
+                            arasındaki ilişkilerin sonradan ne olduğunu kapsamamaktadır. Birkaç tarihçi Osman Bey ile kardeşi Gündüz
+                             Alp'ın arasında çatışma olduğu ve bu çatışma sonunda Gündüz Alp'ın öldürülerek Osman Bey'in uç beyi olduğunu
+                             kabul etmektedir fakat diğer bazı tarihçiler ise Gündüz Alp'ın bey olmasını ve Osman Bey ile Gündüz Alp
+                              mücadelesini tümüyle hiç olmamış gibi bir kenara bırakmaktadırlar. Yine bazı tarihçiler Gündüz Alp'ın 
+                              "Domaniç Muharebesi"'nde şehit olduğunu bildirirler ki bu en yüksek ihtimaldir. Bu tarih karmaşasında bazı
+                               tarihçiler ise Osman Bey ile Dündar Bey'in mücadelesinin olmadığını ve bu mücadele anlatımının Osman
+                                Bey-Gündüz Alp mücadelesine atıf ettiğini kabul ederler. Ayrıca “Domaniç Muharebesi”’nde ölen kişinin 
+                                Osman Beyin ortanca abisi Saru Batu Savcı Bey olduğunu kabul eden tarihçilerde mevcuttur.</p>
+                </div>
+
+            </div>
+            <!--Satır 2 sütun 2-->
+            <div class="tablo">
+                <h3>Osman</h3>
+                <table>
+                    <tr><img src="330px-Osman_Gazi2.jpg" style="width:50%;"></tr>
+                    <tr><th colspan="2">1. Osmanlı Padişahı</th></tr>
+                    <tr><th>Hüküm süresi</th><td>1299 (1281) - 1324</td></tr>
+                    <tr><th>Önce gelen</th><td>Ertuğrul Bey (Kayı beyi olarak)</td></tr>
+                    <tr><th>Sonra gelen</th><td>Orhan Gazi</td></tr>
+                    <tr><th> Eş(ler)i</th><td>Malhun Hatun, Râbi'a Bala Hâtun</td></tr>
+                    <tr><th>Çocuk(lar)ı</th><td>Çoban Bey <br>
+                        Melik Bey<br>
+                        Orhan Gazi<br>
+                        Hamid Bey<br>
+                        Bazarlu Bey<br>
+                        Alâeddin Ali Bey<br>
+                        Fatma Melek Hatun[1]</td></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </div> <!--Concent kapanış-->
+    <script type="text/javascript">
+            var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikipedi</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1,h2,h3{
+            margin: 0;
+        }
+        p{
+            font-size: 18px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333;
+            background-image: linear-gradient(to right, #ccc, #333, #ccc);
+        }
+        .content{
+            width: 75%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .satir1{
+            width: 100%;
+        }
+        .satir2 > .akordiyon{
+            width: 70%;
+            float: left;
+           
+
+            
+        }
+        .satir2 > .tablo{
+            width: 30%;
+            float: left;
+            background-color: #F8F9FA;
+            text-align: center;
+        }
+        table{
+            width: 100%;
+
+        }
+        th{
+            text-align: left;
+        }
+        /*730px ve daha küçük*/
+        @media all and (max-width:900px){
+            .satir2 > .akordiyon, .satir2 > .tablo{
+                width: 100%;
+            }
+            .content{
+                width: 95%;
+            }
+
+        }
+        /* Style the buttons that are used to open and close the accordion panel */
+        .accordion {
+        background-color: white;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        transition: 0.4s;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .accordion:hover {
+        background-color: #ccc;
+        }
+
+        /* Style the accordion panel. Note: hidden by default */
+        .panel {
+        padding: 0 18px;
+        background-color: white;
+        display: none;
+        overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">  
+        <h1>Barış Manço</h1>
+        <p style="color: grey;">Türk sanatçı, besteci, söz yazarı, TV programı yapımcısı ve sunucusu</p>
+        <hr>
+
+        <div class="satir1">
+            <p>
+                Barış Manço (d. 2 Ocak 1943; Üsküdar, İstanbul - ö. 1 Şubat 1999; Kadıköy, İstanbul), Türk sanatçı; şarkıcı, besteci,[3] söz yazarı, 
+                TV programı yapımcısı ve sunucusu,[4] köşe yazarı[5] Devlet Sanatçısı[6] ve kültür elçisi.[7][8][9][10] Türkiye'de rock müziğin öncülerinden, 
+                Anadolu Rock türünün kurucuları arasında sayılır. Bestelediği 200'ün üzerindeki şarkısı,[11] kendisine on iki altın ve bir
+                 platin albüm ve kaset ödülü kazandırdı.[12][13] Bu şarkıların bir bölümü daha sonra Arapça, Bulgarca, Felemenkçe, Almanca, 
+                 Fransızca, İbranice, İngilizce, Japonca ve Yunanca olarak yorumlandı. Hazırladığı televizyon programıyla Dünya'nın pek çok ülkesine 
+                 gitmiş, bu nedenle "Barış Çelebi" olarak adlandırılmıştır.[14] 1991 yılında Türkiye Cumhuriyeti Devlet Sanatçısı Unvanı'na layık görüldü.
+                  1 Şubat 1999 tarihinde, evinde geçirdiği kalp krizi sonucu, kaldırıldığı Siyami Ersek Hastanesinde aynı gece ölmüştür.
+            </p>
+
+        </div>  <!--satir1 kapanış-->
+        
+        <div class="satir2">
+            <!--Satır 2 sütun 1-->
+                <div class="akordiyon">
+                 <button class="accordion">Section 1</button>
+                <div class="panel">
+                <p>Erken Kariyeri</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                <p>Gençliği</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>1960'lar</p>
+                </div>
+
+            </div>
+            <!--Satır 2 sütun 2-->
+            <div class="tablo">
+                <h3>Barış Manço</h3>
+                <table>
+                    <tr><img src="220px-Baris_Manco_gitar.jpg"></tr>
+                    <tr><th>Doğum</th><td>2 Ocak 1943</td></tr>
+                    <tr><th>Ölüm</th><td>1 Şubat 1999</td></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </div> <!--Concent kapanış-->
+    <script type="text/javascript">
+            var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+}
+    </script>
+</body>
+</html>

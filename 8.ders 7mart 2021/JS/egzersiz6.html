@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+    <input type="text" id="birinci">
+    <input type="text" id="ikinci">
+    <input type="button" id="hesapla" value="Sonuc">  
+
+	<script>
+       var birinci=document.getElementById("birinci");
+       var ikinci=document.getElementById("ikinci");
+       var hesapla=document.getElementById("hesapla")
+
+       hesapla.onclick=function(){
+            var toplam=Number(birinci.value)+Number(ikinci.value);
+            alert(toplam);
+        }
+	</script>
+  
+	
+</body>
+</html>

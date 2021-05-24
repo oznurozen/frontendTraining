@@ -1,0 +1,29 @@
+<!--
+1) Boostrap navbar: transparan, yazılar sağda
+2)Büyük gersel: https://www.w3schools.com/howto/howto_css_hero_image.asp
+3)container açılır
+4)h3 etiketiyle yazı
+5)
+row
+    col
+        row
+           uzun resim
+        /row
+        row
+           kısa resim
+        /row
+    /col
+
+    col
+    iframe
+    /col
+    h4 etiketli yazı
+
+    col
+       form
+    /col
+
+/row
+
+
+-->

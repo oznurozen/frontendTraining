@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <!--My CSS-->
+    <style type="text/css">
+     body{
+       margin: 0;
+       background-color: black;
+       color: white;
+     }
+     /*Hero Görseli*/
+     body, html {
+    height: 100%;
+    }
+    .navbar-nav > li{
+      margin-right: 40px;
+    }
+
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("cokluresim.png");
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+    }
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
+    .hero-text button {
+      border-radius: 50px 20px 50px 20px;
+      outline: 0;
+      display: inline-block;
+      padding: 20px 45px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(68, 0, 0);
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .hero-text button:hover {
+      background-color: rgb(145, 0, 48);
+      color: white;
+    }
+    /*sütunların default paddingini kaldırdık*/
+    .nopadding{
+      padding: 0;
+    }
+    /*iframe küçük ekranda yüksekliğini korumalı*/
+   
+    form{
+      background: url("IMG-20170527-WA0009.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100% ;
+      position: relative;
+      
+      
+
+    }
+    input, textarea{
+      width: 40%;
+    }
+    button{
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 10px 50px 10px 50px;
+    }
+    @media screen and (max-width:770px){
+      iframe{
+        height: 400px;
+      }
+      input, textarea{
+        width: 80%;
+      }
+    }
+
+    </style>
+
+    <title>Kişisel Blog</title>
+  </head>
+  <body>
+    <!--MENÜ-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">ÖZNUR<br>ÖZEN</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-end w-100" >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Anasayfa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hakkimda">Hakkımda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">İncelemeler</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nasıl Yapılır</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Web Tasarım</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="nav flex-column " style="position: fixed; margin-left: 95%; margin-top: 20%; ">
+      <a class="nav-link active" aria-current="page" href="#"><img src="instagramm.webp"></a>
+      <a class="nav-link active" aria-current="page" href="#"><img src="youtube.webp"></a>
+      <a class="nav-link active" aria-current="page" href="#"><img src="facebookk.webp"></a>
+      <a class="nav-link active" aria-current="page" href="#"><img src="twitter.webp"></a>
+    
+    </nav>
+
+    <!--Hero Görsel-->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-family: Sofia, sans-serif;">Mükemmellik Her Zaman Bir Tercihtir...</h1>
+        <p></p>
+        <button >Takip Et</button>
+      </div>
+    </div>
+
+    <!--CONTAİNER-->
+    <div class="container" style="text-align: center;">
+      <!--h3 etiketi yazı-->
+      <h4 id="hakkimda"> Herkese selam! Ben Öznur Özen. 5 Mart 1999 tarihinde şu anda yaşadığım yer olan Zonguldak-Ereğli'de doğdum. Sakarya Üniversitesi 
+        3. sınıf matematik bölümü ve Atatürk Üniversitesi 1. sınıf bilgisayar programcılığı bölümünde öğrenim görüyorum. Şu anda okuduğunuz 
+        kişisel blok sitemin kurucusu ve yazarıyım. Bu bilgiler benim hakkımda fikir sahibi olmanızı sağlamayacak.
+         O yüzden gelelim asıl konuya: Kimim ben? Neler yapabilirim? Bu soruların cevaplarını yazdığım yazılarla göreceksiniz.
+          Takipte kalın. Şimdilik hoşçakalın.</h4>
+      <div class="row">
+        <div class="col-12 col-md-4 nopadding">
+
+          <div class="row">
+            <!--uzun resim-->
+            <img src="uzunresim.jpg">
+
+          </div>
+
+          <div class="row">
+            <!--kısa resim-->
+            <img src="kisaresim.jpg">
+
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-8 nopadding">
+          <!--iframe-->
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/aPgfULcPBBc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <!--h4 etiketli yazı-->
+        <h4 style="margin-top: 50px; margin-bottom: 50px;">
+         Web Tasarım-Matematikçi-İçerik Oluşturucu
+        </h4>
+
+        <div class="col-12">
+          <!--form-->
+          <form>
+            <h1>İLETİŞİM</h1>
+            <h5>Benimle Fikirlerinizi Paylaşabilirsiniz</h5>
+            <hr style="width: 50px; margin: auto; ">
+            <h5><a href="mailto:oznurozen67@gmail.com" style="color: white;">oznurozen67@gmail.com</a></h5>
+            <br><br>
+            <input type="text" placeholder="Adınız *">
+            <br><br>
+            <input type="text" placeholder="Email *">
+            <br><br>
+            <input type="text" placeholder="Konu">
+            <br><br>
+            <textarea rows="5">Mesajınız</textarea>
+            <br><br>
+            <button>Send</button>
+          </form>
+        </div>
+
+      </div>
+
+    <!--Container son-->
+    </div>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+  </body>
+</html>

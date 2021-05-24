@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Yaşınız:<input type="number" id="yas"> 
+    <br>
+    Boyunuz:<input type="number" id="boy">
+    <br>
+    KİLONUZ:<input type="number" id="kilo">
+    <br>
+    <select name="" id="cinsiyet"><option id="kadın">kadın</option><option id="erkek">Erkek</option></select>
+    <br>
+    <button id="hesap">Hesapla</button>
+    
+    
+
+    <script>
+         document.getElementById("hesap").onclick= function(){
+            boy = document.getElementById("boy").value;
+            kilo = document.getElementById("kilo").value;     
+
+        boy=Number(boy);
+        kilo=Number(kilo);
+        var sonuc= kilo/(boy/100*boy/100)
+
+        console.log(sonuc);
+
+
+        if(sonuc <= 18.5){
+            console.log("Düşük Kilolusunuz.")
+
+        }  
+        else if(sonuc <= 24.9){
+            console.log("Normal Kilolusunuz.")
+
+        }
+        else if(sonuc <= 29.9){
+            console.log("Fazla Kilolusunuz.")
+
+        }
+        else if(sonuc <= 40){
+            console.log("Obezsiniz.")
+        }
+        
+        else{
+            console.log("Aşırı Obezsiniz.")
+        }
+            yas = document.getElementById("yas").value;
+            cinsiyet = document.getElementById("cinsiyet").value;
+            kadın = document.getElementById("kadın").value;
+            erkek = document.getElementById("erkek").value;
+
+            yas=Number(yas)
+        
+        if(cinsiyet==erkek){
+            if(yas>=50){
+                console.log("bol bol yürüyüş yapmalısınız")
+            }
+        }
+        else if(cinsiyet==kadın){
+            if(yas>=60){
+                console.log("sebze tüketimini arttırmalısınız")
+            }
+        }
+
+        var i;
+            for (i = 0; i < yas; i++) {
+            console.log("*");
+            }
+
+    }
+
+    </script>
+</body>
+</html>

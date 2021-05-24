@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr><td>Boyunuz:</td><td><input type="number" id="boy"></td></tr>
+            <tr><td>Yaşınız :</td><td><input type="number" id="yas"></td></tr>
+            <tr><td>Kilonuz:</td><td><input type="number" id="kilo"></td></tr>
+            <tr><td>Cinsiyetiniz:</td><td><select name="" id="cinsiyet"><option id="kadın">kadın</option><option id="erkek">Erkek</option></select></td></tr>
+            <tr style="text-align: center;"><td colspan="2"><button type="button" id="buton">HESAPLA</button><button type="reset" value="Temizle">Temizle</button></td></tr>
+            <tr style="text-align: center;"><td colspan="2"><textarea cols="28" rows="3" id="hesap"></textarea></td></tr>
+        </table>
+    </form>
+
+
+    <script>
+        document.getElementById("buton").onclick= function(){
+            
+            boy = document.getElementById("boy").value;
+            kilo = document.getElementById("kilo").value;
+            hesap = document.getElementById("hesap");
+            
+            
+            boy=Number(boy);
+            kilo=Number(kilo);
+            var sonuc= kilo/(boy/100*boy/100);
+
+            hesap.innerHTML = sonuc;
+
+            
+
+
+        if(sonuc <= 18.5){
+            hesap.innerHTML = "Düşük Kilolusunuz.";
+
+        }  
+
+        else if(sonuc <= 24.9){
+            hesap.innerHTML ="Normal Kilolusunuz.";
+
+        }
+        else if(sonuc <= 29.9){
+            hesap.innerHTML ="Fazla Kilolusunuz.";
+
+        }
+        else if(sonuc <= 40){
+            hesap.innerHTML ="Obezsiniz.";
+        }
+        
+        else{
+            hesap.innerHTML ="Aşırı Obezsiniz.";
+        }
+    
+
+        yas = document.getElementById("yas").value;
+            cinsiyet = document.getElementById("cinsiyet").value;
+            kadın = document.getElementById("kadın").value;
+            erkek = document.getElementById("erkek").value;
+
+            yas=Number(yas)
+
+
+        if(cinsiyet==erkek){
+            if(yas>=50){
+                hesap.innerHTML ="bol bol yürüyüş yapmalısınız" +sonuc;
+            }
+        }
+        else if(cinsiyet==kadın){
+            if(yas>=60){
+                hesap.innerHTML ="sebze tüketimini arttırmalısınız"
+            }
+        }
+
+        }
+
+    </script>
+</body>
+</html>

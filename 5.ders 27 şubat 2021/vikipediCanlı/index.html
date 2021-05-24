@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Vikipedi</title>
+		<style type="text/css">
+			body{
+				margin:0;
+			}
+			h1,h2,h3{
+				margin: 0;
+			}
+			p{
+				font-size:18px;
+			}
+			hr {
+			    border: 0;
+			    height: 1px;
+			    background: #333;
+			    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+				}
+			.content{
+				width:75%;
+				margin:auto;
+				margin-top:20px;
+			}
+			.satir1{
+				width:100%;
+			}
+			.satir2 > .akordiyon{
+				width:70%;
+				float:left;
+			}
+			.satir2 > .tablo{
+				width:30%;
+				float:left;
+				background-color: #bac6d9;
+				text-align: center;
+			}
+			table{
+				width:100%;
+			}
+			th{
+				text-align: left;
+			}
+			/*730px ve daha küçük*/
+			@media all and (max-width:900px){
+				.satir2 > .akordiyon, .satir2 > .tablo{
+					width:100%;
+				}
+				.content{
+					width:90%;
+				}
+			}
+			/* Akordiyon başlangıç*/
+			.accordion {
+			  background-color: white;
+			  color: #444;
+			  cursor: pointer;
+			  padding: 18px;
+			  width: 100%;
+			  text-align: left;
+			  border: none;
+			  outline: none;
+			  transition: 0.4s;
+			}
+			.active, .accordion:hover {
+			  background-color: #ccc;
+			}
+			.panel {
+			  padding: 0 18px;
+			  background-color: white;
+			  display: none;
+			  overflow: hidden;
+			}
+			/*Akordiyon bitiş*/
+		</style>
+	</head>
+
+	<body>
+		<div class="content"> <!--Content açılış-->
+			<h1>Barış Manço</h1>
+			<p style="color:grey;">Türk sanatçı, besteci, söz yazarı, TV programı yapımcısı ve sunucusu</p>
+			<hr>
+
+			<div class="satir1">
+				<p>Barış Manço (d. 2 Ocak 1943; Üsküdar, İstanbul - ö. 1 Şubat 1999; Kadıköy, İstanbul), Türk sanatçı; şarkıcı, besteci,[3] söz
+				</p>
+			</div>
+
+			<div class="satir2">
+				<!--Satır 2 Sütun 1-->
+				<div class="akordiyon">
+					<button class="accordion">Erken Kariyeri</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+
+					<button class="accordion">Gençliği</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+
+					<button class="accordion">1960'lar</button>
+					<div class="panel">
+					  <p>Lorem ipsum...</p>
+					</div>
+				</div>
+				<!--Satır 2 Sütun 2-->
+				<div class="tablo">
+					<h3>Barış Manço</h3>
+					<table>
+						<!--1.Satır-->
+						<tr><img src="manco.jpg"></tr>
+						<!--2.Satır-->
+						<tr>
+							<th>Doğum</th> <!--1.Sütun-->
+							<td>2 Ocak 1943</td><!--2.Sütun-->
+						</tr>
+						<!--3.Satır-->
+						<tr>
+							<th>Ölüm</th> <!--1.Sütun-->
+							<td>1 Şubat 1999</td><!--2.Sütun-->
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		</div> <!--Content kapanış-->
+
+		<script type="text/javascript">
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+			  acc[i].addEventListener("click", function() {
+			    /* Toggle between adding and removing the "active" class,
+			    to highlight the button that controls the panel */
+			    this.classList.toggle("active");
+
+			    /* Toggle between hiding and showing the active panel */
+			    var panel = this.nextElementSibling;
+			    if (panel.style.display === "block") {
+			      panel.style.display = "none";
+			    } else {
+			      panel.style.display = "block";
+			    }
+			  });
+			}
+		</script>
+	</body>
+
+</html>

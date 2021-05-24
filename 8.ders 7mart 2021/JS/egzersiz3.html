@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+  <input type="text" id="item">
+  <button id="ekle">Ekle</button>
+  <ul id="malzemeler"></ul>
+	<script>
+        document.getElementById("ekle").onclick=function(){
+            document.getElementById("malzemeler").innerHTML+="<li>"+ document.getElementById("item").value +"</li>"; document.getElementById("item").value=""
+        }
+	
+		
+	</script>
+  
+	
+</body>
+</html>

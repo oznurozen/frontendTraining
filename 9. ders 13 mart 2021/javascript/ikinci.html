@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="sayi1">
+    <br>
+    <input type="number" id="sayi2">
+    <br>
+    <button id="topla">TOPLA</button>
+    
+
+    <script>
+        document.getElementById("topla").onclick=function(){
+           sayi1 = document.getElementById("sayi1").value;
+           sayi2 = document.getElementById("sayi2").value;
+
+           sayi1 = Number(sayi1);
+           sayi2 = Number(sayi2);
+           console.log(sayi1 + sayi2)
+        }
+
+
+    </script>
+</body>
+</html>

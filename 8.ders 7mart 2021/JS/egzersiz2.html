@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+    <input type="text" id="isim">
+	<button id="buton" >Yazdır</button>
+    <h1>İSMİNİZ</h1>
+	<p id="sonuc" style="text-transform:uppercase ;"></p>
+	<script>
+		document.getElementById("buton").onclick=function(){
+			document.getElementById("sonuc").innerHTML=document.getElementById("isim").value;
+		}
+		
+	</script>
+  
+	
+</body>
+</html>

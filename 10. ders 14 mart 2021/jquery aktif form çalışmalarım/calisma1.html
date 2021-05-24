@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery.min.js"></script>
+    <style>
+        form{
+            text-align: center;
+        }
+
+        ::placeholder{
+            color: red;
+            text-align: center;
+            opacity: 1;
+        }
+
+     
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <form>
+       <p id="isim">İsim</p>
+       <input type="text" id="isimInput" placeholder=""/>
+
+       <p id="soyisim">soyisim</p>
+       <input type="text" id="soyisimInput"/>
+
+       <p id="email">E-mail</p>
+       <input type="text" id="emailInput"/>
+
+       <p id="sifre">Şifre</p>
+       <input type="text" id="sifreInput"/>
+
+       <p id="sifreTekrar">Şifre Tekrar</p>
+       <input type="text" id="sifreTekrarInput"/>
+        <br><br>
+       <input type="button" id="gonder" value="Gönder"/>
+   </form>
+ 
+
+    <script type="text/javascript">
+    //İNPUTLATIN DOLU OLUP OLMADIĞINI KONTROL EDİİYORUZ
+       $("#gonder").click(function(){
+        if($("#isimInput").val()==""){
+            $("#isimInput").attr("placeholder","İsim boş bırakılamaz!");
+        }
+            if($("#soyisimInput").val()==""){
+            $("#soyisimInput").attr("placeholder","Soysim boş bırakılamaz!");
+        }
+        if($("#emailInput").val()==""){
+            $("#emailInput").attr("placeholder","E-mail boş bırakılamaz!");
+        }
+        if($("#sifreInput").val()==""){
+            $("#sifreInput").attr("placeholder","Şifre boş bırakılamaz!");
+        }
+        if($("#sifreTekrarInput").val()==""){
+            $("#sifreTekrarInput").attr("placeholder","Şifreyi tekrar yazınız!");
+        }
+    //E-MAİLİN GEÇERLİ OLUP OLMADIĞINI KONTROL EDİYORUZ
+        function isEmail(email) {
+            var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+            return regex.test(email);
+        }
+        if($("#emailInput").val()!=""){
+            if(isEmail($("#emailInput").val())==false){
+                alert("Hatalı E-mail adresi");
+            }
+        }
+    
+    //ŞİFRE KONTROLÜ
+        if($("#sifreInput").val()!="" && $("#sifreTekrarInput").val()==""){  //Eğer şifre inputları boş değilse
+            if($("#sifreInput").val()!=$("#sifreTekrarInput").val()){   //Eğer şifreler eşit değilse
+                alert("Şifreler uyuşmuyor!");
+            }
+        }
+       });
+ 
+    </script>
+    
+</body>
+</html>

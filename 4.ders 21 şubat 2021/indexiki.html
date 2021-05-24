@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bir{
+            background-color: grey;
+        }
+        #iki{
+            background-color: red;
+        }
+        #uc{
+            background-color: blue;
+        }
+        #dort{
+            background-color: green;
+        }
+        div{
+            float: left;
+            width: 25%;
+           height: 300px;
+        }
+        /*1199px ve daha az ekran boyutunda*/
+        @media all and (max-width: 1199px){
+           
+           
+
+        }
+       /*991px ve daha az ekran boyutunda*/
+        @media all and (max-width: 991px){
+            div{
+            width: 50%;
+        }
+        }
+        /*768px ve daha az ekran boyutunda*/
+        @media all and (max-width: 768px){
+        div{
+            width: 50%;
+        }
+            
+        }
+        /*575px ve daha az ekran boyutunda*/
+        @media all and (max-width: 575px){
+         div{
+             width: 100%;
+         }
+      }
+    </style>
+</head>
+<body>
+    <div id="bir">Birinci div</div>
+    <div id="iki">İkinci div</div>
+    <div id="uc">Üçüncü div</div>
+    <div id="dort">Dördüncü div</div>
+</body>
+</html>

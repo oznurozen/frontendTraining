@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="inputdegeri">
+    <button id="buton">Giriş</button>
+    
+    <script>
+     /*  x= "öznur";
+       y= "özen";
+       z= 22;
+       console.log("merhaba benim ismim " + x + " ve soyadım " + y +" ben "+ z +" yaşındayım")
+        */
+     /*
+        x=10;
+        x += 5; //x = x + 5
+        x -= 5; //x = x - 5
+        x++;    //x += ve x = x + 1 aynı görevi görüyor
+        console.log(x)
+        */
+                
+         document.getElementById("buton").onclick=function(){
+            yas=document.getElementById("inputdegeri").value;
+            if(yas == 20){
+             /*yapılacak iş*/
+             console.log("İZİN VERİLDİ")
+         }
+         else{
+             console.log("ATILDINIZ")
+         }
+
+         }
+    
+    </script>
+</body>
+</html>
